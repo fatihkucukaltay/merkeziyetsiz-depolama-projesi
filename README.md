@@ -14,6 +14,22 @@ By leveraging **Edge Computing**, this project utilizes idle resources of Single
 * **⚡ Hybrid Architecture:** Separates "Persistence Nodes" (Storage) from "Cache Nodes" (Speed) for optimal performance.
 * **❤️ Self-Healing (Heartbeat):** Automatically detects offline nodes and regenerates lost shards (N=3 Replication).
 
+
+
++-----------------+           +------------------+
+       |   User (Client) | <-------> |   Cache Nodes    |
+       +-----------------+  Fast     | (Mobile Devices) |
+               |            Speed    +------------------+
+               |                           ^   |
+      Encrypted|                           |   | Heartbeat
+      Shards   |                           |   | & Sync
+               v                           |   v
+       +-----------------+           +------------------+
+       | Persistence     | --------> |   HYDRA GRID     |
+       | Nodes (RasPi)   |  Backup   | (Self-Healing)   |
+       +-----------------+           +------------------+
+
+       
 ---
 
 ## 🛠️ Technical Stack
