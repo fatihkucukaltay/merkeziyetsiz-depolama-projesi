@@ -16,6 +16,8 @@ By leveraging **Edge Computing**, this project utilizes idle resources of Single
 
 
 
+
+
 +-----------------+           +------------------+
        |   User (Client) | <-------> |   Cache Nodes    |
        +-----------------+  Fast     | (Mobile Devices) |
@@ -28,6 +30,9 @@ By leveraging **Edge Computing**, this project utilizes idle resources of Single
        | Persistence     | --------> |   HYDRA GRID     |
        | Nodes (RasPi)   |  Backup   | (Self-Healing)   |
        +-----------------+           +------------------+
+
+
+
 
        
 ---
